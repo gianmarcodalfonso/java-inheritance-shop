@@ -14,6 +14,7 @@ public class Television extends Product{
     this.base = base;
     this.height = height;
     this.depth = depth;
+    this.isSmart = isSmart;
   }
 
   // getter
