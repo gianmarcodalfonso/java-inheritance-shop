@@ -1,8 +1,8 @@
 package org.lessons.java;
 
 public class Smartphone extends Product {
-  int imei;
-  int memory;
+  private int imei;
+  private int memory;
 
   // getter
   public int getImei(){
