@@ -9,6 +9,14 @@ public class Product {
   private BigDecimal price;
   private float iva;
 
+  // constructor
+  public Product(int serialCode, String name, String brand, BigDecimal price, float iva){
+    this.serialCode = serialCode;
+    this.name = name;
+    this.brand = brand;
+    this.price = price;
+    this.price = price;
+  }
 
   // getter
   public int getSerialCode(){
