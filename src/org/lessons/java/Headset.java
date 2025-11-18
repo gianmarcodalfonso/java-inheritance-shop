@@ -1,8 +1,17 @@
 package org.lessons.java;
 
-public class Headset {
+import java.math.BigDecimal;
+
+public class Headset extends Product{
   private String color;
   private boolean isWireless;
+
+  // constructor
+  public Headset(int serialCode, String name, String brand, BigDecimal price, float iva, String color, boolean isWireless){
+    super(serialCode, name, brand, price, iva);
+    this.color = color;
+    this.isWireless = isWireless;
+  }
 
   // getter
   public String getColor(){
