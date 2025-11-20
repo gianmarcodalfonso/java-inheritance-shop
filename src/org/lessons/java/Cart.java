@@ -38,7 +38,7 @@ public class Cart {
     System.out.println(cartSmartphone.toString());
   }
 
-  if(selectedProduct == 2){
+  else if(selectedProduct == 2){
     System.out.println("Inserisci i dati della televisione che desideri acquistare");
     //chiedo numero di serie
     System.out.println("Numero di serie:");
@@ -74,7 +74,7 @@ public class Cart {
     System.out.println(cartTelevision.toString());
   }
 
-  if (selectedProduct == 3) {
+  else if (selectedProduct == 3) {
     System.out.println("Inserisci i dati delle cuffie che desideri acquistare");
 
     //chiedo numero di serie
@@ -113,5 +113,9 @@ public class Cart {
 
     System.out.println(cartHeadset.toString());
 }
+
+  else{
+    System.out.println("Prodotto non valido!");
+  }
 }
 }
