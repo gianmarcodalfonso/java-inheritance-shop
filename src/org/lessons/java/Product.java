@@ -56,6 +56,7 @@ public class Product {
     this.iva = newIva;
   }
   
+  @Override
   public String toString(){
     return String.format("Prodotto con codice di serie: %d, nome: %s, brand: %s, prezzo: %2f, Iva: %2f", this.serialCode, this.name, this.brand, this.price, this.iva);
   }
