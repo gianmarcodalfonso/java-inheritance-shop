@@ -51,4 +51,13 @@ public class Television extends Product{
     this.isSmart = newIsSmart;
   }
 
+  @Override
+public String toString() {
+    return String.format(
+        "TV - Codice: %d, Nome: %s, Brand: %s, Prezzo: %.2f€, IVA: %.2f%%, Dimensioni: %dx%dx%d cm, Smart: %s",
+        this.serialCode, this.name, this.brand, this.price.doubleValue(), this.iva,
+        this.base, this.height, this.depth,
+        this.isSmart ? "Sì" : "No"
+    );
+}
 }

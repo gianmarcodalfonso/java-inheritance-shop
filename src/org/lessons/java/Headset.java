@@ -30,4 +30,6 @@ public class Headset extends Product{
   public void setIsWireless(boolean newIsWireless){
     this.isWireless = newIsWireless;
   }
+
+  
 }

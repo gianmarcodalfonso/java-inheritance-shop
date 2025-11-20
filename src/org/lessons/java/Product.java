@@ -3,11 +3,11 @@ package org.lessons.java;
 import java.math.BigDecimal;
 
 public class Product {
-  private int serialCode;
-  private String name;
-  private String brand;
-  private BigDecimal price;
-  private float iva;
+  protected int serialCode;
+  protected String name;
+  protected String brand;
+  protected BigDecimal price;
+  protected float iva;
 
   // constructor
   public Product(int serialCode, String name, String brand, BigDecimal price, float iva){
@@ -56,4 +56,7 @@ public class Product {
     this.iva = newIva;
   }
   
+  public String toString(){
+    return String.format("Prodotto con codice di serie: %d, nome: %s, brand: %s, prezzo: %2f, Iva: %2f", this.serialCode, this.name, this.brand, this.price, this.iva);
+  }
 }

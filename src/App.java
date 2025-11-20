@@ -9,6 +9,8 @@ public class App {
         // television test
         Television bpCons = new Television(320402, "bp", "cons", BigDecimal.valueOf(159.99), 0.25f, 110, 70, 15, true);
 
+        System.out.println(bpCons.toString());
+
         System.out.println(bpCons.getSerialCode());
         System.out.println(bpCons.getName());
         System.out.println(bpCons.getPrice());
