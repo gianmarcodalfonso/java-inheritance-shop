@@ -31,5 +31,12 @@ public class Headset extends Product{
     this.isWireless = newIsWireless;
   }
 
-  
+  @Override
+public String toString() {
+    return String.format(
+        "Cuffie - Codice: %d, Nome: %s, Brand: %s, Prezzo: %.2f€, IVA: %.2f%%, Colore: %s, Wireless: %s",
+        this.serialCode, this.name, this.brand, this.price.doubleValue(), this.iva,
+        this.color, this.isWireless ? "Sì" : "No"
+    );
+}
 }

@@ -73,5 +73,45 @@ public class Cart {
     Television cartTelevision = new Television(userSerialCode, userProductName, userProductBrand, userProductPrice, userProductIva, userProductBase, userProductHeight, userProductDepth, userProductIsSmart);
     System.out.println(cartTelevision.toString());
   }
+
+  if (selectedProduct == 3) {
+    System.out.println("Inserisci i dati delle cuffie che desideri acquistare");
+
+    //chiedo numero di serie
+    System.out.println("Numero di serie:");
+    int userSerialCode = in.nextInt();
+    in.nextLine();
+    //chiedo nome del prodotto
+    System.out.println("Nome:");
+    String userProductName = in.nextLine();
+    //chiedo brand del prodotto
+    System.out.println("Brand:");
+    String userProductBrand = in.nextLine();
+    //chiedo prezzo
+    System.out.println("Prezzo:");
+    BigDecimal userProductPrice = in.nextBigDecimal();
+    //chiedo iva
+    System.out.println("Iva:");
+    float userProductIva = in.nextFloat();
+    in.nextLine();
+    //chiedo colore
+    System.out.println("Colore:");
+    String userProductColor = in.nextLine();
+    //wireless?
+    System.out.println("È wireless? Sì (1), No (2):");
+    boolean userProductIsWireless = in.nextInt() == 1;
+
+    Headset cartHeadset = new Headset(
+        userSerialCode,
+        userProductName,
+        userProductBrand,
+        userProductPrice,
+        userProductIva,
+        userProductColor,
+        userProductIsWireless
+    );
+
+    System.out.println(cartHeadset.toString());
+}
 }
 }
